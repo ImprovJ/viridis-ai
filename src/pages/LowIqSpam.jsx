@@ -39,7 +39,7 @@ function LowIqSpam() {
               </div>
               <div className="form-name-container">
                 <input className="form-name-input"></input>
-                <p className="form-name-sub">sabrename</p>
+                <p className="form-name-sub">surname</p>
               </div>
             </div>
           </div>
