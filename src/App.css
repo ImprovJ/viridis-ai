@@ -115,8 +115,10 @@ meter {
 }
 .section-item {
   position: relative;
-  height: 369px;
+  height: 111.8%;
   width: 100%;
+  min-height: 295px;
+  min-width: 418px;
 }
 
 .section-item:hover {
