@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca1ee99d.css",
+    "main.css": "/static/css/main.a3457218.css",
     "main.js": "/static/js/main.f14f1881.js",
     "static/media/dogs.png": "/static/media/dogs.0457f96e5fe7fd40a4d1.png",
     "static/media/whale.png": "/static/media/whale.74fdfc196364031f63b8.png",
     "static/media/statue.png": "/static/media/statue.e7d8bc38de01071314af.png",
     "static/media/viridislogo.png": "/static/media/viridislogo.85a2bb84509b51707c17.png",
     "index.html": "/index.html",
-    "main.ca1ee99d.css.map": "/static/css/main.ca1ee99d.css.map",
+    "main.a3457218.css.map": "/static/css/main.a3457218.css.map",
     "main.f14f1881.js.map": "/static/js/main.f14f1881.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca1ee99d.css",
+    "static/css/main.a3457218.css",
     "static/js/main.f14f1881.js"
   ]
 }
