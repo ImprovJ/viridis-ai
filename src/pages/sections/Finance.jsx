@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import NavBar from "../../components/NavBar";
-import NavBarMobile from "../../components/NavBarMobile";
-import FinanceBlog1 from "../../components/sections/Finance/FinanceBlog1";
-import FinanceBlog2 from "../../components/sections/Finance/FinanceBlog2";
+import IntroToStockMarkets from "../../components/blogs/Finance/IntroToStockMarkets";
+import FinanceBlog2 from "../../components/blogs/Finance/FinanceBlog2";
 
 function Finance() {
   const [showBlog1, setShowBlog1] = useState(true);
@@ -25,7 +24,6 @@ function Finance() {
   return (
     <>
       <NavBar />
-      <NavBarMobile></NavBarMobile>
       <div className="section-wrap">
         <h1 className="section-title">Finance</h1>
         <div className="section-main">
@@ -39,7 +37,7 @@ function Finance() {
           </div>
           <div className="section-content-wrap">
             {showBlog1 ? (
-              <FinanceBlog1></FinanceBlog1>
+              <IntroToStockMarkets></IntroToStockMarkets>
             ) : (
               <FinanceBlog2></FinanceBlog2>
             )}

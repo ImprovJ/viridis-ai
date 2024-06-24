@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import NavBar from "../../components/NavBar";
-import NavBarMobile from "../../components/NavBarMobile";
-import LogosBlog1 from "../../components/sections/Logos/LogosBlog1";
-import LogosBlog2 from "../../components/sections/Logos/LogosBlog2";
+import LogoDesignPrinciples from "../../components/blogs/Logos/LogoDesignPrinciples";
+import LogoDesignPrinciples2 from "../../components/blogs/Logos/LogoDesignPrinciples2";
+
 
 function Logos() {
   const [showBlog1, setShowBlog1] = useState(true);
@@ -24,7 +24,6 @@ function Logos() {
   return (
     <>
       <NavBar />
-      <NavBarMobile></NavBarMobile>
       <div className="section-wrap">
         <h1 className="section-title">Logos</h1>
         <div className="section-main">
@@ -37,7 +36,7 @@ function Logos() {
             </p>
           </div>
           <div className="section-content-wrap">
-            {showBlog1 ? <LogosBlog1></LogosBlog1> : <LogosBlog2></LogosBlog2>}
+            {showBlog1 ? <LogoDesignPrinciples></LogoDesignPrinciples> : <LogoDesignPrinciples2></LogoDesignPrinciples2>}
           </div>
         </div>
       </div>

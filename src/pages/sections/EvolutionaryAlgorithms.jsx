@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import NavBar from "../../components/NavBar";
-import NavBarMobile from "../../components/NavBarMobile";
-import EvAlgorithmsBlog1 from "../../components/sections/Evolutionary Algorithms/EvAlgorithmsBlog1";
-import EvAlgorithmsBlog2 from "../../components/sections/Evolutionary Algorithms/EvAlgorithmsBlog2";
+import GeneticAlgorithms from "../../components/blogs/EvolutionaryAlgorithms/GeneticAlgorithms";
 
 function EvolutionaryAlgorithms() {
   const [showBlog1, setShowBlog1] = useState(true);
@@ -24,7 +22,6 @@ function EvolutionaryAlgorithms() {
   return (
     <>
       <NavBar />
-      <NavBarMobile></NavBarMobile>
       <div className="section-wrap">
         <h3 className="section-title">Evolutionary Algorithms</h3>
         <div className="section-main">
@@ -38,7 +35,7 @@ function EvolutionaryAlgorithms() {
           </div>
           <div className="section-content-wrap">
             {showBlog1 ? (
-              <EvAlgorithmsBlog1></EvAlgorithmsBlog1>
+              <GeneticAlgorithms></GeneticAlgorithms>
             ) : (
               <EvAlgorithmsBlog2></EvAlgorithmsBlog2>
             )}
