@@ -1,8 +1,3 @@
-import GeneticAlgorithms from '../components/blogs/EvolutionaryAlgorithms/GeneticAlgorithms.jsx';
-import IntroToStockMarkets from '../components/blogs/Finance/IntroToStockMarkets.jsx';
-import LogoDesignPrinciples from '../components/blogs/Logos/LogoDesignPrinciples.jsx';
-
-// Import images
 import evolutionaryAlgorithmsImg from '../assets/sectionImgs/statue.png';
 import financeImg from '../assets/sectionImgs/dogs.png';
 import logosImg from '../assets/sectionImgs/whale.png';
@@ -17,7 +12,17 @@ const sectionObjects = [
       {
         id: "genetic-algorithms",
         title: "Genetic Algorithms",
-        content: GeneticAlgorithms
+        content: 'EvolutionaryAlgorithms/test.md'
+      },
+      {
+        id: "genetic-algorithms2",
+        title: "Genetic Algorithms2",
+        content: 'EvolutionaryAlgorithms/test.md'
+      },
+      {
+        id: "genetic-algorithms3",
+        title: "Genetic Algorithms3",
+        content: 'EvolutionaryAlgorithms/test.md'
       },
     ]
   },
@@ -30,7 +35,7 @@ const sectionObjects = [
       {
         id: "intro-to-stock-markets",
         title: "Introduction to Stock Markets",
-        content: IntroToStockMarkets
+        content: 'Finance/intro-to-stock-markets.md'
       },
     ]
   },
@@ -43,7 +48,7 @@ const sectionObjects = [
       {
         id: "logo-design-principles",
         title: "Logo Design Principles",
-        content: LogoDesignPrinciples
+        content: 'Logos/logo-design-principles.md'
       },
     ]
   },

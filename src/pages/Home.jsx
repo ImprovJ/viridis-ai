@@ -8,7 +8,7 @@ function Home() {
     <div className="home-wrap">
       <div className="sections-wrap">
         {sectionObjects.map((section) => (
-          <Link to={section.path} key={section.id}>
+          <Link to={section.path} key={section.id} className="section-item">
             <Section
               title={section.title}
               image={section.image}

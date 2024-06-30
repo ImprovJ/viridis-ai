@@ -41,7 +41,7 @@ function LowIqSpam() {
         <h1 className="form-h1">Do Not Talk With Us <p>Language is insufficient.</p></h1>
         <p className="form-quote">
           "Wise men speak because they have something to say; Fools speak
-          because they have to say something" - Plato
+          because they have to say something" - Plateau
         </p>
         <form className="form" onSubmit={sendEmail}>
           <div className="form-section">

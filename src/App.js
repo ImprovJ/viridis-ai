@@ -14,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/lowiqspam" element={<LowIqSpam />} />
         <Route path="/section/:sectionId" element={<SectionPage />} />
+        <Route path="/section/:sectionId/:blogId" element={<SectionPage />} />
       </Routes>
     </div>
   );

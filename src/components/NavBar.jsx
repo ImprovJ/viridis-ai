@@ -21,38 +21,38 @@ function NavBar() {
   };
 
   const NavLinks = () => (
-    <>
-      <Link className="nav-link" to="/lowiqspam" onClick={() => setMenuOpen(false)}>Low IQ Spam</Link>
-      <Link className="nav-link" to="/" onClick={() => setMenuOpen(false)}>Viridis</Link>
-    </>
-  );
+  <>
+    <Link className="nav-link" to="/lowiqspam" onClick={() => setMenuOpen(false)}>Low IQ Spam</Link>
+    <Link className="nav-link" to="/" onClick={() => setMenuOpen(false)}>Viridis</Link>
+  </>
+);
 
   return (
-    <nav className={`nav ${isMobile ? 'mobile' : ''}`}>
-      <img src={logo} alt="Viridis Logo" className={`logo ${isMobile ? 'mobile-nav-logo' : ''}`} />
+  <nav className={`nav ${isMobile ? 'mobile' : ''}`}>
+    <img src={logo} alt="Viridis Logo" className={`logo ${isMobile ? 'mobile-nav-logo' : ''}`} />
 
-      {isMobile ? (
-        <>
-          <button className="hamburger" onClick={toggleMenu}>
-            <i className="material-icons">{menuOpen ? 'close' : 'menu'}</i>
-          </button>
-          {menuOpen && (
-            <ul className="menu mobile">
-              <NavLinks />
-              <li><ThemeToggle /></li>
-            </ul>
-          )}
-        </>
-      ) : (
-        <div className="nav-content">
-          <div className="nav-link-wrap">
+    {isMobile ? (
+      <>
+        <button className="hamburger" onClick={toggleMenu}>
+          <i className="material-icons">{menuOpen ? 'close' : 'menu'}</i>
+        </button>
+        {menuOpen && (
+          <ul className="menu mobile">
             <NavLinks />
-          </div>
-          <ThemeToggle />
+            <li><ThemeToggle /></li>
+          </ul>
+        )}
+      </>
+    ) : (
+      <div className="nav-content">
+        <div className="nav-links">
+          <NavLinks />
         </div>
-      )}
-    </nav>
-  );
+        <ThemeToggle />
+      </div>
+    )}
+  </nav>
+);
 }
 
 export default NavBar;
